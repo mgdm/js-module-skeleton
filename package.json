@@ -1,0 +1,21 @@
+{
+  "name": "p",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "build": "babel src -D --out-dir dist --extensions .mjs --keep-file-extension",
+    "watch": "babel src -D --watch --out-dir dist --extensions .mjs --keep-file-extension",
+    "start": "http-server dist"
+  }
+}
